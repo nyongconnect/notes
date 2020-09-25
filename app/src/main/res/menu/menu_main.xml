@@ -1,0 +1,31 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.devthrust.mynotes.NoteActivity">
+    <item
+        android:id="@+id/action_send_email"
+        android:orderInCategory="100"
+        android:title="@string/menu_send_as_email"
+        app:showAsAction="never" />
+
+    <item
+        android:title="@string/action_cancel"
+        android:icon="@drawable/ic_undo_black_24dp"
+        app:showAsAction="ifRoom"
+        android:id="@+id/action_undo"
+        android:orderInCategory="100"
+        />
+    <item
+        android:id="@+id/action_next"
+        android:enabled="false"
+        android:icon="@drawable/ic_skip_next_black_24dp"
+        android:orderInCategory="200"
+        android:title="@string/next"
+        android:visible="false"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_notify"
+        android:title="@string/set_reminder"
+        app:showAsAction="never"
+        android:orderInCategory="200"/>
+</menu>
